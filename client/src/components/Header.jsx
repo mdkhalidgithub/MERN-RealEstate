@@ -28,6 +28,9 @@ export default function Header() {
             <Link to='/sign-in'>
             <li className=' text-stone-700 hover:underline'>Sign in</li>
             </Link>
+            <Link to='/sign-up'>
+            <li className=' text-stone-700 hover:underline'>Sign up</li>
+            </Link>
         </ul>
 
         </div>
