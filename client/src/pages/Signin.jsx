@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { signInStart, signInSuccess, signInFailure } from "../redux/user/userSlice";
 
+
 export default function SignIn() {
   const [formData, setFormData] = useState({
     email: "",
@@ -77,12 +78,14 @@ export default function SignIn() {
         >
           {loading ? "Loading..." : "Sign In"}
         </button>
+        
       </form>
       <div className="flex gap-2 mt-5">
         <p> Dont have an account?</p>
         <Link to="/sign-up">
           <span className="text-blue-700">Sign up</span>
         </Link>
+       
       </div>
       {error && <p className="text-red-500 mt-5">{error}</p>}
     </div>
